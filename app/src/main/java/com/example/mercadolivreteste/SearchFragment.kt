@@ -2,9 +2,7 @@ package com.example.mercadolivreteste
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import androidx.lifecycle.ViewModelProvider
@@ -26,7 +24,7 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         searchButton.setOnClickListener {
             val query = searchEditText.text.toString()
             productViewModel.searchProducts(query)
-            findNavController().navigate(R.id.searchFragment)
+            findNavController().navigate(R.id.action_searchFragment_to_resultsFragment)
         }
     }
 }
