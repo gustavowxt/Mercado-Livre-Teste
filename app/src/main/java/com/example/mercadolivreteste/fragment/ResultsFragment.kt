@@ -1,15 +1,16 @@
-package com.example.mercadolivreteste
+package com.example.mercadolivreteste.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mercadolivreteste.Product
+import com.example.mercadolivreteste.ProductAdapter
+import com.example.mercadolivreteste.viewmodel.ProductViewModel
+import com.example.mercadolivreteste.R
 
 class ResultsFragment : Fragment(R.layout.fragment_results) {
 
@@ -30,7 +31,7 @@ class ResultsFragment : Fragment(R.layout.fragment_results) {
         recyclerView.adapter = adapter
 
         productViewModel.products.observe(viewLifecycleOwner) { products ->
-            adapter.submitList(products as List<com.example.mercadolivreteste.Product>)
+            adapter.submitList(products as List<Product>)
         }
     }
 }

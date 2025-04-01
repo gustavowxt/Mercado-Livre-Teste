@@ -1,15 +1,14 @@
-package com.example.mercadolivreteste
+package com.example.mercadolivreteste.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
-import coil.Coil
 import coil.load
+import com.example.mercadolivreteste.viewmodel.ProductViewModel
+import com.example.mercadolivreteste.R
 
 class ProductDetailFragment : Fragment(R.layout.fragment_product_detail) {
 

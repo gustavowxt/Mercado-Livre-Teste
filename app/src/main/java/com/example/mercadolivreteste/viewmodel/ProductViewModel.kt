@@ -1,10 +1,13 @@
-package com.example.mercadolivreteste
+package com.example.mercadolivreteste.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.mercadolivreteste.Product
+import com.example.mercadolivreteste.ProductDetail
+import com.example.mercadolivreteste.data.RetrofitInstance
 import kotlinx.coroutines.launch
 
 class ProductViewModel : ViewModel() {

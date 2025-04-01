@@ -1,5 +1,6 @@
-package com.example.mercadolivreteste
+package com.example.mercadolivreteste.data
 
+import com.example.mercadolivreteste.MercadoLivreApi
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

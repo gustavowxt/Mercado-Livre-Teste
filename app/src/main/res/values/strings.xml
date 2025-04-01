@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">Mercado Livre Teste</string>
     <string name="title_activity_search">ActivitySearch</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="search_mercadolivre">Buscar no Mercado Livre</string>
+
+    <string name="prefixo">em</string>
+    <string name="frete_gratis">Frete grátis</string>
+    <string name="preco">R$ %1$s</string>
+    <string name="installments">em %1$dx R$ %2$s</string>
+    <string name="sem_juros">sem juros</string>
+    <string name="erro_internet">Parece que não há \nconexão com a internet</string>
+    <string name="aconteceu_um_erro">Algo de errado aconteceu\nTente novamente mais tarde</string>
+
 </resources>
